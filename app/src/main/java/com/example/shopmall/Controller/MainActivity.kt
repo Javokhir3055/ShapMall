@@ -3,6 +3,7 @@ package com.example.shopmall.Controller
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
+import android.widget.Toast
 import com.example.shopmall.Adapters.CategoryAdapter
 import com.example.shopmall.R
 import com.example.shopmall.Services.DataService
@@ -18,5 +19,6 @@ class MainActivity : AppCompatActivity() {
 
         adapter = CategoryAdapter(this, DataService.categories)
         categoryListView.adapter = adapter
+
     }
 }
